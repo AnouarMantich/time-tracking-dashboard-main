@@ -41,10 +41,15 @@
       height: 100vh;
       width: 100vw;
       background: var(--Very-dark-blue);
+
+
+    }
+    main{
+      height: 100%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-
     }
 
 .container{
@@ -93,6 +98,7 @@
 }
 .report h1{
   width: 50%;
+  font-size: 2.3rem;
 }
 
 .work{
@@ -157,6 +163,7 @@ cursor: pointer;
 .time p{
   margin-top: 1.7em;
   color: var(--Pale-Blue);
+  margin-bottom: 25px;
  
 }
 .hidden{
@@ -165,8 +172,10 @@ cursor: pointer;
 
 @media screen and (max-width:600px) {
 
+
   .container{
   height: 100% ;
+  min-height: 100%;
   width:90%;
   display: flex;
   flex-direction: column;
@@ -206,7 +215,7 @@ cursor: pointer;
 }
 .report h1{
   width: auto;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 
@@ -218,7 +227,7 @@ cursor: pointer;
 .time {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .time h1{
@@ -240,6 +249,9 @@ cursor: pointer;
   margin-bottom: 20px;
 
 }
+.hidden{
+  display: none;
+}
 
 }
 
@@ -247,13 +259,14 @@ cursor: pointer;
   </style>
 </head>
 <body>
+  <main>
 
   <div class="container">
     
   
     <div class="report-infos">
       <div class="report">
-        <img src="./images/image-jeremy.png" alt="" class="dotes">
+        <img src="./images/image-jeremy.png" alt="image-jeremy" class="dotes">
         <div class="avatar-info">
           <p> Report for</p>
           <h1>Jeremy Robson</h1>
@@ -272,7 +285,7 @@ cursor: pointer;
       <div class="item">
         <div class="head">
           <p class="title"></p>
-          <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" srcset="">
         </div>
         <div class="time daily">
           <h1></h1>
@@ -294,7 +307,7 @@ cursor: pointer;
       <div class="item">
         <div class="head">
           <p  class="title"></p>
-          <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" srcset="">
         </div>
         <div class="time daily">
           <h1></h1>
@@ -316,7 +329,7 @@ cursor: pointer;
       <div class="item">
         <div class="head">
           <p  class="title"></p>
-          <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" srcset="">
         </div>
         <div class="time daily">
           <h1></h1>
@@ -338,7 +351,7 @@ cursor: pointer;
       <div class="item">
         <div class="head">
           <p  class="title"></p>
-          <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" srcset="">
         </div>
         <div class="time daily">
           <h1></h1>
@@ -360,7 +373,7 @@ cursor: pointer;
       <div class="item">
         <div class="head">
           <p  class="title"></p>
-          <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" srcset="">
         </div>
         <div class="time daily">
           <h1></h1>
@@ -382,7 +395,7 @@ cursor: pointer;
       <div class="item">
         <div class="head">
           <p  class="title"></p>
-          <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" srcset="">
         </div>
         <div class="time daily">
           <h1 class="current"></h1>
@@ -407,11 +420,7 @@ cursor: pointer;
 
   </div>
 
-   
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="./script.js"></script>
+</main>
 </body>
 </html>
